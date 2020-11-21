@@ -5,6 +5,7 @@ import axios from "axios"
 export default class Form extends Component {
     state={
         nome: "",
+        data: "" ,
         email: "",
         campoIncorreto: false,
         telefone: "",
@@ -15,6 +16,11 @@ export default class Form extends Component {
     onChangeNome = (event) => {
         this.setState({nome: event.target.value})
         console.log(this.state.nome)
+    } 
+
+    onChangeData = (event) => {
+        this.setState({data: event.target.value})
+        console.log(this.state.data)
     } 
 
 
@@ -73,6 +79,15 @@ export default class Form extends Component {
                     value={this.state.nome}
                     onChange={this.onChangeNome}
                 ></input>
+
+                <label for="nome">Data de Nascimento</label>
+                <input 
+                    id="nome" 
+                    type={"date"} 
+                    value={this.state.data}
+                    onChange={this.onChangeData}
+                ></input>
+
                 <label for="email">E-mail</label>
                 <input
                     id="email" 
