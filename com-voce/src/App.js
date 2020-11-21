@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import AppDiv from "./AppStyled"
+import React, { Component } from 'react'
+import Form from './Components/Form'
 
-function App() {
+
+export default class App extends Component {
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <AppDiv>
+      <header>
+        <h1>COM VOCÊ</h1>
 
-export default App;
+      </header>
+      <content>
+        <section className="sobre">
+          <h2>Sobre a Campanha</h2>
+        </section>
+        <section className="formSection">
+          <h2>Inscreva-se</h2>
+          <Form></Form>
+        </section>
+      </content>
+      <footer><span></span></footer>
+    </AppDiv>
+  );
+  }
+}
