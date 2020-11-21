@@ -45,7 +45,7 @@ export default class Form extends Component {
                 telefone: this.state.telefone
             }
             
-            this.formPost(body)
+            // this.formPost(body)
             this.setState({
                 nome: "",
                 email: "",
@@ -71,6 +71,7 @@ export default class Form extends Component {
     render() {
         return (
             <FormDiv>
+                {this.state.enviado? <p className="agradecimento">Obrigado!<br/> Entraremos em contato em Breve.</p> : null }
                 {this.state.campoIncorreto? <p>Por favor, preencha todos os campos corretamente!</p> : ""}
                 <label for="nome">Nome</label>
                 <input 
@@ -106,7 +107,6 @@ export default class Form extends Component {
                 ></input>
 
                 <button onClick={this.onClickEnviar}>Enviar</button>
-                {this.state.enviado? <p>Obrigado! Entraremos em contato em Breve.</p> : null}
             </FormDiv>
         )
     }

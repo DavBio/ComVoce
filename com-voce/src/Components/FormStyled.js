@@ -40,6 +40,10 @@ const FormDiv = styled.div `
         transform: translateY(-0.05em);;
     }
 
+    .agradecimento{
+        font-size: 4em;
+    }
+
 `
 
 export default FormDiv;
