@@ -59,6 +59,13 @@ const AppDiv = styled.div `
         align-items:center;
         width: 85%;
         padding:16px 0;
+
+            @media only screen 
+            and (min-device-width : 375px) 
+            and (max-device-width : 812px)
+            and (-webkit-device-pixel-ratio : 3) { 
+                flex-direction: column;
+            }
     }
 
     .sobre>div>p{
@@ -87,6 +94,20 @@ const AppDiv = styled.div `
         height:8px;
         background-color:darkgray;
     }
+
+    @media(max-device-width : 812px){ 
+       header>p {
+        text-align: center;
+       }
+        img {
+            width:100%;
+        }
+
+        .sobre>div {
+            flex-direction: column;
+        }
+    }
+
 `
 
 export default AppDiv;
