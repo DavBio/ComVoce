@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ComVoce/static/css/main.34f53c9d.chunk.css",
-    "main.js": "/ComVoce/static/js/main.bd75b3fd.chunk.js",
-    "main.js.map": "/ComVoce/static/js/main.bd75b3fd.chunk.js.map",
+    "main.js": "/ComVoce/static/js/main.69cff706.chunk.js",
+    "main.js.map": "/ComVoce/static/js/main.69cff706.chunk.js.map",
     "runtime-main.js": "/ComVoce/static/js/runtime-main.8b4c137a.js",
     "runtime-main.js.map": "/ComVoce/static/js/runtime-main.8b4c137a.js.map",
     "static/js/2.8900bce1.chunk.js": "/ComVoce/static/js/2.8900bce1.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.8b4c137a.js",
     "static/js/2.8900bce1.chunk.js",
     "static/css/main.34f53c9d.chunk.css",
-    "static/js/main.bd75b3fd.chunk.js"
+    "static/js/main.69cff706.chunk.js"
   ]
 }
